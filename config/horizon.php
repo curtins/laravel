@@ -68,7 +68,7 @@ return [
         'local' => [
             'supervisor-1' => [
                 'connection' => 'redis',
-                'queue' => ['default'],
+                'queue' => ['defaultredis'],
                 'balance' => 'simple',
                 'processes' => 3,
                 'tries' => 3,
