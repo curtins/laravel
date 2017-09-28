@@ -53,7 +53,7 @@ class RSSDataCommand extends Command
     
         $files = \File::allFiles($destDir); 
     
-        $cnt =0;
+        $cnt = 0;
     
         foreach ($files as $file)
        { 
