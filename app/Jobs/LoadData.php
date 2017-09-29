@@ -24,6 +24,17 @@ class LoadData implements ShouldQueue
         //
     }
 
+     /**
+     * Get the tags that should be assigned to the job.
+     *
+     * @return array
+     */
+
+    public function tags()
+    {
+        return ['render', 'test'];
+    }
+
     /**
      * Execute the job.
      *
