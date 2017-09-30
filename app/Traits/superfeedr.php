@@ -24,9 +24,9 @@ trait SuperFeedrLoad
                     if (($strStatus == '200') && (count($json['items']) > 0) )
                     {
                         $cnt++;
-                        echo ($file) .  PHP_EOL ;
-                        echo ($strfeed) . PHP_EOL .PHP_EOL ;
-                        Log::info('Showing ' . $file . ',' . $strfeed );
+                        //echo ($file) .  PHP_EOL ;
+                        //echo ($strfeed) . PHP_EOL .PHP_EOL ;
+                        Log::info('Decoding.. ' . $file . ',' . $strfeed );
                         //echo ($strStatus) . '<br>';
                         //echo ($strtitle) . '<br>';
 
