@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Console\Commands;
+namespace App\Traits;
  
 
 use Illuminate\Console\Command;
@@ -10,7 +11,7 @@ use Illuminate\Filesystem\Filesystem;
 class RSSDataCommand extends Command 
 {
 
-    use App\Traits\StripFile;
+    //use App\Traits\StripFile;
 
     /**
      * The name and signature of the console command.
