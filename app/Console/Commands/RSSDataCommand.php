@@ -12,6 +12,8 @@ use Illuminate\Filesystem\Filesystem;
 class RSSDataCommand extends Command 
 {
 
+    use SuperFeedrLoad;
+
     //use App\Traits\StripFile;
 
     /**
@@ -45,6 +47,9 @@ class RSSDataCommand extends Command
      */
     public function handle()
     {
+
+        
+
         Log::info('Showing user profile for user: ' .  time() );
         $file = new Filesystem();
         //$sourceDir = '/home/forge/superfeedr.scurtin.org/code/data';
