@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Console\Commands; 
+namespace App\Traits;
 
-use App\Traits\SuperFeedrLoad;
+
  
 
 use Illuminate\Console\Command;
@@ -13,8 +14,8 @@ class RSSDataCommand extends Command
 {
 
        
-
-    use SuperFeedrLoad;
+    //use App\Traits\SuperFeedrLoad;
+    //use SuperFeedrLoad;
 
     /**
      * The name and signature of the console command.
