@@ -12,7 +12,7 @@ use Illuminate\Filesystem\Filesystem;
 class RSSDataCommand extends Command 
 {
 
-    use \App\Traits\SuperFeedrLoad;
+    use SuperFeedrLoad;
 
     //use App\Traits\StripFile;
 
