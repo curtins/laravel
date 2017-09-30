@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Console\Commands;
-//namespace App\Traits;
+namespace App\Traits;
  
 
 use Illuminate\Console\Command;
