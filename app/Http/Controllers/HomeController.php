@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Jobs\LoadData;
+ 
 
 class HomeController extends Controller
 {
@@ -26,7 +26,7 @@ class HomeController extends Controller
     public function index()
     {
         
-        $this->dispatch(new App\Jobs\LoadData());
+         
         return view('home');
     }
 }
