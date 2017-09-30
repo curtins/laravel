@@ -1,13 +1,17 @@
 <?php
 
 namespace App\Console\Commands;
+ 
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Filesystem\Filesystem;
 
-class RSSDataCommand extends Command
+class RSSDataCommand extends Command 
 {
+
+    use App\Traits\StripFile;
+
     /**
      * The name and signature of the console command.
      *
