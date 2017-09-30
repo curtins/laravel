@@ -2,7 +2,7 @@
 
 namespace App\Console\Commands; 
 
-use App\Traits;
+use App\Traits\SuperFeedrLoad;
  
 
 use Illuminate\Console\Command;
@@ -12,9 +12,9 @@ use Illuminate\Filesystem\Filesystem;
 class RSSDataCommand extends Command 
 {
 
-    use SuperFeedrLoad;
+       
 
-    //use App\Traits\StripFile;
+    use SuperFeedrLoad;
 
     /**
      * The name and signature of the console command.
