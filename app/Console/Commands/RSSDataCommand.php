@@ -21,7 +21,7 @@ class RSSDataCommand extends Command
      * @var string
      */
     protected $signature = 'rss:load';
-    protected $ffile = '';
+     
 
     /**
      * The console command description.
@@ -38,7 +38,7 @@ class RSSDataCommand extends Command
     public function __construct()
     {
         parent::__construct();
-        $this->StripFile($ffile);
+        $this->StripFile(null);
     }
 
     /**
