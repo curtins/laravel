@@ -1,7 +1,9 @@
 <?php
 
-namespace App\Console\Commands; 
-namespace App\Traits;
+//namespace App\Console\Commands; 
+//namespace App\Traits;
+
+namespace App;
 
 
  
