@@ -1,10 +1,7 @@
 <?php
 
-//namespace App\Console\Commands; 
-namespace App;
+namespace App\Console\Commands; 
  
- 
-
 
  
 
