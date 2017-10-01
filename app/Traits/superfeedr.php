@@ -39,6 +39,11 @@ trait SuperFeedrLoad
                         //dd($json);
                     }         //echo count($json['standardLinks']);
 
+
+                    Log::info('Total.. ' . $cnt );
+
+
+
                 }
 
         }                    
