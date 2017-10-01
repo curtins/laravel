@@ -40,7 +40,7 @@ trait SuperFeedrLoad
                     }         //echo count($json['standardLinks']);
 
 
-                    Log::info('Total.. ' . $cnt );
+                    
 
 
 

@@ -70,7 +70,7 @@ class RSSDataCommand extends Command
        foreach ($files as $file)
        { 
 
-           $this->StripFile($file);
+           $this->StripFile($file); 
            
        }
     
