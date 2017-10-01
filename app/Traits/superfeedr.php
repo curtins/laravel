@@ -15,11 +15,13 @@ trait SuperFeedrLoad
         $strnextFetch = $json['status']['nextFetch'];
         $strtitle = $json['title'];
 
+        $cnt = 0;
+
         if (array_key_exists('permalinkUrl', $json))
         {
             //echo "image exists " . $json['permalinkUrl'] . "<br>";
 
-                $cnt = 0;
+              
 
                 $strfeed = $json['status']['feed'];
                 if  (array_key_exists('items',$json))
