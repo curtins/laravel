@@ -29,7 +29,7 @@ trait SuperFeedrLoad
                     if (($strStatus == '200') && (count($json['items']) > 0) )
                     {
                         $cnt++;                        
-                        Log::info('Decoding.. ' . $file . ',' . $strfeed );
+                        //Log::info('Decoding.. ' . $file . ',' . $strfeed );
                          
                     }         
                     
