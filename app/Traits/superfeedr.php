@@ -52,7 +52,7 @@ trait SuperFeedrLoad
                 }
 
         }    
-        Log::info('Total Processed.. ' . $cnt );                
+        //Log::info('Total Processed.. ' . $cnt );                
     }
 } 
 
