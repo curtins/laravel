@@ -38,7 +38,7 @@ class RSSDataCommand extends Command
     public function __construct()
     {
         parent::__construct();
-        $this->StripFile(null);
+       
     }
 
     /**
@@ -69,6 +69,8 @@ class RSSDataCommand extends Command
     
        foreach ($files as $file)
        { 
+
+           
            
        }
     
