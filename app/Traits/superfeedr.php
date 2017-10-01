@@ -40,7 +40,7 @@ trait SuperFeedrLoad
                     }         //echo count($json['standardLinks']);
 
 
-                    Log::info('Total Processed.. ' . $cnt );
+                    
 
 
                     
@@ -49,7 +49,8 @@ trait SuperFeedrLoad
 
                 }
 
-        }                    
+        }    
+        Log::info('Total Processed.. ' . $cnt );                
     }
 } 
 
