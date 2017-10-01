@@ -7,7 +7,7 @@ trait SuperFeedrLoad
  
     public function StripFile($file)
     {
-        $data = file_get_contents("$file");
+        $data = file_get_contents($file);
         $json = json_decode($data,true);
         $strStatus = $json['status']['code'];
         $strhttp = $json['status']['http'];
