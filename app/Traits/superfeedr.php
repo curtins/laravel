@@ -29,7 +29,7 @@ trait SuperFeedrLoad
                         $cnt++;
                         //echo ($file) .  PHP_EOL ;
                         //echo ($strfeed) . PHP_EOL .PHP_EOL ;
-                        //Log::info('Decoding.. ' . $file . ',' . $strfeed );
+                        Log::info('Decoding.. ' . $file . ',' . $strfeed );
                         //echo ($strStatus) . '<br>';
                         //echo ($strtitle) . '<br>';
 
