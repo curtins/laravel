@@ -18,7 +18,7 @@ trait SuperFeedrLoad
         {
             //echo "image exists " . $json['permalinkUrl'] . "<br>";
 
-            
+                $cnt = 0;
 
                 $strfeed = $json['status']['feed'];
                 if  (array_key_exists('items',$json))
