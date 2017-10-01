@@ -28,27 +28,11 @@ trait SuperFeedrLoad
                 {
                     if (($strStatus == '200') && (count($json['items']) > 0) )
                     {
-                        $cnt++;
-                        //echo ($file) .  PHP_EOL ;
-                        //echo ($strfeed) . PHP_EOL .PHP_EOL ;
+                        $cnt++;                        
                         Log::info('Decoding.. ' . $file . ',' . $strfeed );
-                        //echo ($strStatus) . '<br>';
-                        //echo ($strtitle) . '<br>';
-
-                        //echo count($json['items']) . ' - items <br>';
-                        //echo count($json['status']) . PHP_EOL ;
-
-                        //dd($json);
-                    }         //echo count($json['standardLinks']);
-
-
+                         
+                    }         
                     
-
-
-                    
-
-
-
                 }
 
         }    
