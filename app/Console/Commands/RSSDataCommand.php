@@ -2,7 +2,7 @@
 
 namespace App\Console\Commands; 
  
-
+use App\Traits\SuperFeedrLoad;
  
 
 use Illuminate\Console\Command;
