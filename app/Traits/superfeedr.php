@@ -10,10 +10,10 @@ trait SuperFeedrLoad
     {
         $data = file_get_contents($file);
         $json = json_decode($data,true);
-        //$strStatus = $json['status']['code'];
-        //$strhttp = $json['status']['http'];
-        //$strnextFetch = $json['status']['nextFetch'];
-        //$strtitle = $json['title'];
+        $strStatus = $json['status']['code'];
+        $strhttp = $json['status']['http'];
+        $strnextFetch = $json['status']['nextFetch'];
+        $strtitle = $json['title'];
 
         $detail = array(
 
