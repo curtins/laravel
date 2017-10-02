@@ -10,12 +10,7 @@ trait SuperFeedrLoad
     {
         $data = file_get_contents($file);
         $json = json_decode($data,true);
-        
-        //$strStatus = $json['status']['code'];
-        //$strhttp = $json['status']['http'];
-        //$strnextFetch = $json['status']['nextFetch'];
-        //$strtitle = $json['title'];
-
+       
         $detail = array(
 
             "code"      => $json['status']['code'],
@@ -29,10 +24,6 @@ trait SuperFeedrLoad
 
         if (array_key_exists('permalinkUrl', $json))
         {
-            //echo "image exists " . $json['permalinkUrl'] . "<br>";
-
-              
-
                 $strfeed = $json['status']['feed'];
 
                 
@@ -48,8 +39,29 @@ trait SuperFeedrLoad
                 }
 
         }    
-        //Log::info('Total Processed.. ' . $cnt );                
+                        
     }
+
+    
+    public function LoadDetail($detailarray)
+    {
+
+
+
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 } 
 
  
