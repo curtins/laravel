@@ -29,7 +29,7 @@ trait SuperFeedrLoad
                 );
                     
 
-                //LoadDetail($detail);
+                dd($detail);
                 
                 if  (array_key_exists('items',$json))
                 {
