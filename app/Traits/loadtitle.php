@@ -8,7 +8,7 @@ trait LoadTitleData
  
     public function LoadTitle($array)
     {
-
+        return 0;
     }        
 
 } 
