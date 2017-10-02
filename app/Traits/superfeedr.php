@@ -24,7 +24,7 @@ trait SuperFeedrLoad
                                 "http"      => $json['status']['http'],
                                 "nextfetch" => $json['status']['nextFetch'],
                                 "title"     => $json['title'],
-                                "feed"      => $json['status']['feed'];
+                                "feed"      => $json['status']['feed']
                     
                 );
                     
