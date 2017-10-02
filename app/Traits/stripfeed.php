@@ -14,7 +14,7 @@ trait SuperFeedrLoad
         
         $cnt = 0;
 
-        if (array_key_exists('permalinkUrl', $json))
+        if (array_key_exists('permalinkUrl', $json)) 
         {
                 $detail = array(
                     
