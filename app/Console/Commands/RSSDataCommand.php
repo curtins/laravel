@@ -2,7 +2,7 @@
 
 namespace App\Console\Commands; 
  
-use App\Traits\SuperFeedrLoad;
+use App\Traits\ProcessFile;
  
 
 use Illuminate\Console\Command;
