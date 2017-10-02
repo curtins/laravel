@@ -10,10 +10,11 @@ trait SuperFeedrLoad
     {
         $data = file_get_contents($file);
         $json = json_decode($data,true);
-        $strStatus = $json['status']['code'];
-        $strhttp = $json['status']['http'];
-        $strnextFetch = $json['status']['nextFetch'];
-        $strtitle = $json['title'];
+        
+        //$strStatus = $json['status']['code'];
+        //$strhttp = $json['status']['http'];
+        //$strnextFetch = $json['status']['nextFetch'];
+        //$strtitle = $json['title'];
 
         $detail = array(
 
@@ -37,7 +38,7 @@ trait SuperFeedrLoad
                 
                 if  (array_key_exists('items',$json))
                 {
-                    if (($strStatus == '200') && (count($json['items']) > 0) )
+                    if (($json['status']['code'] == '200') && (count($json['items']) > 0) )
                     {
                         $cnt++;                        
                         //Log::info('Decoding.. ' . $file . ',' . $strfeed );
