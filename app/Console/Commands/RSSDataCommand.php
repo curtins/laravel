@@ -13,7 +13,7 @@ use Illuminate\Filesystem\Filesystem;
 class RSSDataCommand extends Command 
 {
 
-    use ProcessFile, LoadDetailData;
+    use ProcessFile, LoadTitleData;
 
      
     /**
