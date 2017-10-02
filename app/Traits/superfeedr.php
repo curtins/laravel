@@ -27,9 +27,10 @@ trait SuperFeedrLoad
                                 "feed"      => $json['status']['feed']
                     
                 );
-                    
+                
 
-                dd($detail);
+                $return = LoadDetail($detail);
+               
                 
                 if  (array_key_exists('items',$json))
                 {
@@ -51,7 +52,7 @@ trait SuperFeedrLoad
     {
 
 
-
+        return 0;
 
     }
 
