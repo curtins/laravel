@@ -4,6 +4,7 @@ namespace App\Console\Commands;
  
 use App\Traits\ProcessFile;
 use App\Traits\LoadTitleData;
+use App\Traits\LoadDetailData;;
  
 
 use Illuminate\Console\Command;
@@ -13,7 +14,7 @@ use Illuminate\Filesystem\Filesystem;
 class RSSDataCommand extends Command 
 {
 
-    use ProcessFile, LoadTitleData;
+    use ProcessFile, LoadTitleData, LoadDetailData;
 
      
     /**
