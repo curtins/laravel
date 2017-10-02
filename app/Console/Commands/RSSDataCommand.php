@@ -3,6 +3,7 @@
 namespace App\Console\Commands; 
  
 use App\Traits\ProcessFile;
+use App\Traits\LoadTitleData;
  
 
 use Illuminate\Console\Command;
