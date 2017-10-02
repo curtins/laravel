@@ -3,10 +3,10 @@
 namespace App\Traits;
 use Illuminate\Support\Facades\Log;
 
-trait LoadTitleData
+trait TitleDataLoad
 {
  
-    public function LoadTitle($array)
+    public function LoadTitleData($array)
     {
         return 0;
     }        
