@@ -3,7 +3,7 @@
 namespace App\Traits;
 use Illuminate\Support\Facades\Log;
 
-trait SuperFeedrLoad
+trait ProcessFile
 {
  
     public function StripFile($file)
