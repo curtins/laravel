@@ -11,22 +11,25 @@ trait SuperFeedrLoad
         $data = file_get_contents($file);
         $json = json_decode($data,true);
        
-        $detail = array(
-
-            "code"      => $json['status']['code'],
-            "http"      => $json['status']['http'],
-            "nextfetch" => $json['status']['nextFetch'],
-            "title"     => $json['title']
-
-        );
-
+        
         $cnt = 0;
 
         if (array_key_exists('permalinkUrl', $json))
         {
-                $strfeed = $json['status']['feed'];
+                //$strfeed = $json['status']['feed'];
 
-                LoadDetail($detail);
+                $detail = array(
+                    
+                                "code"      => $json['status']['code'],
+                                "http"      => $json['status']['http'],
+                                "nextfetch" => $json['status']['nextFetch'],
+                                "title"     => $json['title'],
+                                "feed"      => $json['status']['feed'];
+                    
+                );
+                    
+
+                //LoadDetail($detail);
                 
                 if  (array_key_exists('items',$json))
                 {
