@@ -8,7 +8,7 @@ trait LoadDetailData
  
     public function LoadDetail($array)
     {
-
+        return 0;
     }        
 
 } 
