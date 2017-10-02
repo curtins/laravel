@@ -1,13 +1,13 @@
 <?php
 
 namespace App\Traits;
-use App\Traits\LoadTitleData;
+
 use Illuminate\Support\Facades\Log;
 
 trait ProcessFile
 {
 
-    use LoadTitleData;
+    
  
     public function StripFile($file)
     {
