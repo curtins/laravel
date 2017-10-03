@@ -7,13 +7,15 @@ use Illuminate\Support\Facades\Log;
 trait ProcessFile
 {
 
-    public function GetData()
+    public function LoadTitleData($array)
     {
-
         return 0;
-    }
+    }     
 
-    
+    public function LoadDetail($array)
+    {
+        return 0;
+    }        
  
     public function StripFile($file)
     {
