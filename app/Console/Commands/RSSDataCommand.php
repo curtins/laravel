@@ -77,7 +77,7 @@ class RSSDataCommand extends Command
 
            $strPassArray = $this->StripFile($file); 
            $strReturn    = $this->LoadTitleData($strArray);
-           //$this->LoadDetail($strArray);
+           $strReturn    = $this->LoadDetail($strArray);
 
             
            
