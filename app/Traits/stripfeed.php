@@ -9,7 +9,7 @@ trait ProcessFile
 
     public function LoadTitleData($array)
     { 
-        dd($array);
+        //dd($array);
 
         return 0;
     }     
