@@ -7,7 +7,11 @@ use Illuminate\Support\Facades\Log;
 trait ProcessFile
 {
 
-    
+    public function GetData()
+    {
+
+        return 0;
+    }
 
     
  
