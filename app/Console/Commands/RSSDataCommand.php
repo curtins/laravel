@@ -16,7 +16,7 @@ class RSSDataCommand extends Command
 
     use ProcessFile;
     
-    //TitleDataLoad, LoadDetailData;
+     
 
      
     /**
