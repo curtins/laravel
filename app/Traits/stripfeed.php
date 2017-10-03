@@ -47,6 +47,7 @@ trait ProcessFile
                         //$return = LoadTitle($detail);
                         //$strReturn = LoadTitleData($detail);
                         //$strReturn = LoadDetail($detail);
+                        Return $detail;
                          
                     }         
                     
