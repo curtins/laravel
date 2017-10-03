@@ -8,7 +8,9 @@ trait ProcessFile
 {
 
     public function LoadTitleData($array)
-    {
+    { 
+        dd($array);
+
         return 0;
     }     
 
