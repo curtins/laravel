@@ -73,9 +73,9 @@ class RSSDataCommand extends Command
     
        foreach ($files as $file)
        { 
-           $strArray=[];
+           //$strArray=[];
 
-           $this->StripFile($file); 
+           $strPassArray = $this->StripFile($file); 
            //$this->LoadTitleData($strArray);
            //$this->LoadDetail($strArray);
 
