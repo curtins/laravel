@@ -8,6 +8,8 @@ trait ProcessFile
 {
 
     
+
+    
  
     public function StripFile($file)
     {
