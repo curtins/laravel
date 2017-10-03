@@ -45,8 +45,8 @@ trait ProcessFile
                         $cnt++;                        
                         //Log::info('Decoding.. ' . $file . ',' . $strfeed );
                         //$return = LoadTitle($detail);
-                        $strReturn = LoadTitleData($detail);
-                        $strReturn = LoadDetail($detail);
+                        //$strReturn = LoadTitleData($detail);
+                        //$strReturn = LoadDetail($detail);
                          
                     }         
                     
