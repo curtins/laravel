@@ -13,6 +13,8 @@ trait ProcessFile
         //dd($array);
 
         $title = new JsonNewsData;
+        $title->source = "superfeedr";
+        $title.save();
 
         return 0;
     }     

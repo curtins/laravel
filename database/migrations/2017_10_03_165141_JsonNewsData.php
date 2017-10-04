@@ -31,6 +31,6 @@ class JsonNewsData extends Migration
      */
     public function down()
     {
-        Schema::drop('jsonheader');
+        Schema::drop('JsonNewData');
     }
 }
