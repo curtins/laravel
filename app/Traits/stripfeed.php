@@ -17,7 +17,7 @@ trait ProcessFile
         return 0;
     }     
 
-    public function LoadDetail $array)
+    public function LoadDetail($array)
     {
         return 0;
     }        
