@@ -10,7 +10,7 @@ trait ProcessFile
 
     public function LoadTitleData($array)
     { 
-        //dd($array);
+        dd($array);
 
         $title = new newsheader;
         $title->source = "superfeedr";
