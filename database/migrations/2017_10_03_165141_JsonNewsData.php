@@ -13,7 +13,7 @@ class JsonNewsData extends Migration
      */
     public function up()
     {
-        Schema::create('JsonNewData', function (Blueprint $table) {
+        Schema::create('JsonNewsData', function (Blueprint $table) {
             $table->increments('id');
             $table->string('source');
             $table->string('http');
