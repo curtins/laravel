@@ -13,7 +13,15 @@ class JsonNewsData extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('JsonNewData', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('source');
+            $table->string('http');
+            $table->string('nextfetch');
+            $table->string('title');
+            $table->string('feed');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +31,6 @@ class JsonNewsData extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('jsonheader');
     }
 }
