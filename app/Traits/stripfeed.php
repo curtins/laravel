@@ -12,15 +12,16 @@ trait ProcessFile
     { 
        
 
-        $title = new newsheader;
-        $title->source = "superfeedr";
-        $title->code   = $array('code');
-        dd($array);
+        $title = new newsheader($array);
 
-        $title->http= $array(1);
-        $title->nextfetch= $array(2);
-        $title->title= $array(3);
-        $title->feed= $array(4);
+        //$title->source = "superfeedr";
+        //$title->code   = $array('code');
+        //dd($array);
+
+        //$title->http= $array(1);
+        //$title->nextfetch= $array(2);
+        //$title->title= $array(3);
+        //$title->feed= $array(4);
         $title->save();
 
         return 0;
