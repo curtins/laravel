@@ -12,7 +12,7 @@ trait ProcessFile
     { 
         //dd($array);
 
-        $title = new JsonNewsData;
+        $title = new newsheader;
         $title->source = "superfeedr";
         $title->save();
 

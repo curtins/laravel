@@ -15,6 +15,7 @@ class CreateNewsheadersTable extends Migration
     {
         Schema::create('newsheaders', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('source');
             $table->timestamps();
         });
     }
