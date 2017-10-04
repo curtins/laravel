@@ -14,8 +14,15 @@ class CreateNewsheadersTable extends Migration
     public function up()
     {
         Schema::create('newsheaders', function (Blueprint $table) {
+            
             $table->increments('id');
             $table->string('source');
+            $table->string('code');
+            $table->string('http');
+            $table->string('nextfetch');
+            $table->string('title');
+            $table->string('feed');
+
             $table->timestamps();
         });
     }

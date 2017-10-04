@@ -14,6 +14,11 @@ trait ProcessFile
 
         $title = new newsheader;
         $title->source = "superfeedr";
+        $title->code   = $array(0);
+        $title->http= $array(1);
+        $title->nextfetch= $array(2);
+        $title->title= $array(3);
+        $title->feed= $array(4);
         $title->save();
 
         return 0;
