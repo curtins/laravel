@@ -14,7 +14,7 @@ trait ProcessFile
 
         $title = new JsonNewsData;
         $title->source = "superfeedr";
-        $title.save();
+        $title->save();
 
         return 0;
     }     
