@@ -3,8 +3,8 @@
 namespace App\Console\Commands; 
  
 use App\Traits\ProcessFile;
-use App\Traits\TitleDataLoad;
-use App\Traits\LoadDetailData;
+//use App\Traits\TitleDataLoad;
+//use App\Traits\LoadDetailData;
 
  
 
