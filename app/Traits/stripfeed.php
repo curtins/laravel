@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Traits;
-use App\JsonNewsData;
+use App\newsheader;
 
 use Illuminate\Support\Facades\Log;
 
