@@ -12,10 +12,12 @@ trait ProcessFile
     { 
         //dd($array);
 
+        $title = new JsonNewsData;
+
         return 0;
     }     
 
-    public function LoadDetail($array)
+    public function LoadDetail(JsonNewsData $array)
     {
         return 0;
     }        
