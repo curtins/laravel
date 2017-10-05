@@ -83,7 +83,7 @@ class RSSDataCommand extends Command
 
            //$cnt ++; 
 
-           \File::cleanDirectory(env('SOURCE_DATA'));
+           \File::delete($file);
            
        }
     
