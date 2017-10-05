@@ -68,7 +68,7 @@ class RSSDataCommand extends Command
         $success = \File::copyDirectory($sourceDir, $destDir);
     
     
-        $files = \File::allFiles($destDir); 
+        $files = \File::allFiles(sourceDir); 
     
         $cnt = 0;
     
