@@ -44,8 +44,8 @@ trait ProcessFile
         {
                 $detail = array(
                     
-                                "code"      => $json['status']['code'],
                                 "source"    => "superfeeder",
+                                "code"      => $json['status']['code'],                              
                                 "http"      => $json['status']['http'],
                                 "nextfetch" => $json['status']['nextFetch'],
                                 "title"     => $json['title'],
