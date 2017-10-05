@@ -64,7 +64,7 @@ trait ProcessFile
                         //$return = LoadTitle($detail);
                         //$strReturn = LoadTitleData($detail);
                         //$strReturn = LoadDetail($detail);
-                        Return $detail;
+                       
 
                         $title = new newsheader(array(
                             "source"    => "superfeeder",
@@ -81,6 +81,8 @@ trait ProcessFile
                     }         
                     
                 }
+
+                return 0;
 
         }    
                         
