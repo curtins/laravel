@@ -12,7 +12,8 @@ trait ProcessFile
     { 
        
 
-        $title = new newsheader($array);
+        $title = new newsheader;
+        $title->fill($array);
 
         //$title->source = "superfeedr";
         //$title->code   = $array('code');
