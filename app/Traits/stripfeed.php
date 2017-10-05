@@ -10,10 +10,10 @@ trait ProcessFile
 
     public function LoadTitleData($array)
     { 
-        dd(gettype($array));
+        //dd(gettype($array));
         //dd($array);
-        $title = new newsheader;
-        $title->fill($array);
+        //$title = new newsheader;
+        //$title->fill($array->all());
 
         //$title->source = "superfeedr";
         //$title->code   = $array('code');
@@ -23,7 +23,7 @@ trait ProcessFile
         //$title->nextfetch= $array(2);
         //$title->title= $array(3);
         //$title->feed= $array(4);
-        $title->save();
+        //$title->save();
 
         return 0;
     }     
@@ -65,6 +65,18 @@ trait ProcessFile
                         //$strReturn = LoadTitleData($detail);
                         //$strReturn = LoadDetail($detail);
                         Return $detail;
+
+                        $title = new newsheader(array(
+                            "source"    => "superfeeder",
+                            "code"      => $json['status']['code'],                              
+                            "http"      => $json['status']['http'],
+                            "nextfetch" => $json['status']['nextFetch'],
+                            "title"     => $json['title'],
+                            "feed"      => $json['status']['feed']
+                
+                        ));
+
+                        $title.save();
                          
                     }         
                     
