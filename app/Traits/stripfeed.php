@@ -11,13 +11,13 @@ trait ProcessFile
     public function LoadTitleData($array)
     { 
        
-
+        dd($array);
         $title = new newsheader;
         $title->fill($array);
 
         //$title->source = "superfeedr";
         //$title->code   = $array('code');
-        //dd($array);
+        
 
         //$title->http= $array(1);
         //$title->nextfetch= $array(2);
