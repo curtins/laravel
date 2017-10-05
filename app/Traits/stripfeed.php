@@ -47,14 +47,19 @@ trait ProcessFile
                     if (($json['status']['code'] == '200') && (count($json['items']) > 0) )
                     {
 
-                        $title = new newsheader; 
-                        $title->source  =  "superfeeder";
-                        $title->code  =    $json['status']['code'];                              
-                        $title->http  =  $json['status']['http'];
-                        $title->nextfetch  =  $json['status']['nextFetch'];
-                        $title->title =    $json['title'];
-                        $title->feed   =  $json['status']['feed'];
-                        $title.save();
+
+                        $detail = newsheader::create (array(
+                            
+                                        "source"    => "superfeeder",
+                                        "code"      => $json['status']['code'],                              
+                                        "http"      => $json['status']['http'],
+                                        "nextfetch" => $json['status']['nextFetch'],
+                                        "title"     => $json['title'],
+                                        "feed"      => $json['status']['feed']
+                            
+                        ));
+
+                        
                 
                         
 
