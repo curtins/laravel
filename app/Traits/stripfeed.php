@@ -46,12 +46,6 @@ trait ProcessFile
                 {
                     if (($json['status']['code'] == '200') && (count($json['items']) > 0) )
                     {
-                        //$cnt++;                        
-                        //Log::info('Decoding.. ' . $file . ',' . $strfeed );
-                        //$return = LoadTitle($detail);
-                        //$strReturn = LoadTitleData($detail);
-                        //$strReturn = LoadDetail($detail);
-                       
 
                         $title = new newsheader(array(
                             "source"    => "superfeeder",
@@ -69,9 +63,11 @@ trait ProcessFile
                     
                 }
 
-                return 0;
+               
 
         }    
+
+        return 0;
                         
     }
 
