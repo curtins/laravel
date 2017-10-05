@@ -81,7 +81,7 @@ class RSSDataCommand extends Command
            //$strReturn    = $this->LoadTitleData($strPassArray);
            //$strReturn    = $this->LoadDetail($strArray);
 
-           $cnt ++; 
+           //$cnt ++; 
            
        }
     
