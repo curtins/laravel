@@ -59,7 +59,7 @@ trait ProcessFile
                 {
                     if (($json['status']['code'] == '200') && (count($json['items']) > 0) )
                     {
-                        $cnt++;                        
+                        //$cnt++;                        
                         //Log::info('Decoding.. ' . $file . ',' . $strfeed );
                         //$return = LoadTitle($detail);
                         //$strReturn = LoadTitleData($detail);
