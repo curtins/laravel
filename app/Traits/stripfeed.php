@@ -11,7 +11,7 @@ trait ProcessFile
     public function LoadTitleData($array)
     { 
         dd(gettype($array));
-        dd($array);
+        //dd($array);
         $title = new newsheader;
         $title->fill($array);
 
