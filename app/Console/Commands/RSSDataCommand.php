@@ -83,13 +83,13 @@ class RSSDataCommand extends Command
 
            //$cnt ++; 
 
-           echo ($file);
+           //echo ($file);
 
            \File::delete($file);
            
        }
     
-       echo ($cnt) . PHP_EOL ;
+       //echo ($cnt) . PHP_EOL ;
              
     }
 } 

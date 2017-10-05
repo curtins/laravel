@@ -47,6 +47,8 @@ trait ProcessFile
                     if (($json['status']['code'] == '200') && (count($json['items']) > 0) )
                     {
 
+                        echo (count($json['items']));
+
 
                         $detail = newsheader::create (array(
                             
