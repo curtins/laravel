@@ -83,9 +83,9 @@ class RSSDataCommand extends Command
 
            //$cnt ++; 
 
-           echo ('/home/forge/superfeedr.scurtin.org/code/data' . $file);
+           echo ($file);
 
-           \File::delete('/home/forge/superfeedr.scurtin.org/code/data' . $file);
+           \File::delete($file);
            
        }
     
