@@ -82,6 +82,8 @@ class RSSDataCommand extends Command
            //$strReturn    = $this->LoadDetail($strArray);
 
            //$cnt ++; 
+
+           File::cleanDirectory(env('SOURCE_DATA'));
            
        }
     
