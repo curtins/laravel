@@ -64,7 +64,7 @@ trait ProcessFile
                         
                         $lastInsertedId = $newsheader->id;
 
-                        dd ($lastInsertedId);
+                        //dd ($lastInsertedId);
                         
 
                         
