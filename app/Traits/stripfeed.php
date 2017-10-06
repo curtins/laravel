@@ -47,10 +47,9 @@ trait ProcessFile
                     if (($json['status']['code'] == '200') && (count($json['items']) > 0) )
                     {
 
-                        dd(count($json['items']));
 
 
-                        $detail = newsheader::create (array(
+                        $header = newsheader::create (array(
                             
                                         "source"    => "superfeeder",
                                         "code"      => $json['status']['code'],                              
@@ -62,7 +61,8 @@ trait ProcessFile
                         ));
 
                         
-                
+                        
+                        dd('header/'. $id);
                         
 
                         
