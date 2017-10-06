@@ -14,6 +14,6 @@ class NewsheaderController extends Controller
      public function index()
      {
          $headers = newsheaders::all();          
-         return view('home' , compact('headers'));
+         //return view('home' , compact('headers'));
      }
 }
