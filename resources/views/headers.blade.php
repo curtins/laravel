@@ -12,7 +12,7 @@
                 <p>  
 
                     @foreach ($headers as $header)
-                        <p>This is user {{ $header->feed }}</p>
+                        <p>{{ $header->feed }}</p>
                     @endforeach
                     
                 </p>
