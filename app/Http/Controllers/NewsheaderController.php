@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\newsheader;
 
 use Illuminate\Http\Request;
 
