@@ -66,14 +66,7 @@ trait ProcessFile
                         $lastInsertedId = $newsheader->id;
 
 
-                        //$newsdetail = newsdetail::create (array(
-                            
-                        //                "headerid"    => $lastInsertedId 
-                                        
-                            
-                        //));
-
-                        //echo($json['items']['published']);
+                         
 
 
                        
