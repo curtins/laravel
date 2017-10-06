@@ -21,7 +21,7 @@ Route::get('/', function () {
 });
 
 Route::get('/headers', function () {
-    return view('headers', compact('newsheaders'));
+    return view('headers', compact('newsheader'));
 });
 
 Auth::routes();
