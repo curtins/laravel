@@ -63,6 +63,8 @@ trait ProcessFile
                         
                         
                         $lastInsertedId = $newsheader->id;
+
+                        dd ($lastInsertedId);
                         
 
                         
