@@ -65,7 +65,7 @@ trait ProcessFile
                         
                         $lastInsertedId = $newsheader->id;
 
-                        echo($json['items']);
+                        echo($json['items']['id']);
 
 
                        
