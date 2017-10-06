@@ -8,7 +8,12 @@
                 <div class="panel-heading">List</div>
 
                 <div class="panel-body">
+
                 <p>  
+
+                    @foreach ($headers as $header)
+                        <p>This is user {{ $header->feed }}</p>
+                    @endforeach
                     
                 </p>
 
