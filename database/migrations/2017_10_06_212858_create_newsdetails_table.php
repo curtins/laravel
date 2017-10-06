@@ -14,8 +14,20 @@ class CreateNewsdetailsTable extends Migration
     public function up()
     {
         Schema::create('newsdetails', function (Blueprint $table) {
+
+
+           
             $table->increments('id');
+            $table->integer('headerid');
+            $table->string('headerid');
+            $table->string('linkid');
+            $table->string('published');
+            $table->string('updated');
+            $table->string('title');
+            $table->string('summary');
+            $table->string('content');
             $table->timestamps();
+            
         });
     }
 
