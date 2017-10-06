@@ -62,7 +62,7 @@ trait ProcessFile
 
                         
                         
-                        dd('header/'. $id);
+                        dd($header->$id);
                         
 
                         
