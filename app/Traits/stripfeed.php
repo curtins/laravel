@@ -2,6 +2,7 @@
 
 namespace App\Traits;
 use App\newsheader;
+use App\newsdetail;
 
 use Illuminate\Support\Facades\Log;
 
