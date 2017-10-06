@@ -24,8 +24,10 @@ Route::get('/', function () {
 });
 
 Route::get('/headers', function () {   
+    
     $headers = newsheader::all();  
-    dd($headers);
+    return view('headers',compact($headers));
+    //dd($headers);
 });
 
 Auth::routes();
