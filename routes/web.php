@@ -24,7 +24,7 @@ Route::get('/', function () {
 });
 
 Route::get('/headers', function () {   
-    $headers = newsheaders::all();  
+    $headers = newsheader::all();  
     dd($headers);
 });
 
