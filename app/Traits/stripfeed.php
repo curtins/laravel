@@ -49,7 +49,7 @@ trait ProcessFile
 
 
 
-                        $header = newsheader::create (array(
+                        $newsheader = newsheader::create (array(
                             
                                         "source"    => "superfeeder",
                                         "code"      => $json['status']['code'],                              
@@ -62,7 +62,7 @@ trait ProcessFile
 
                         
                         
-                        dd($header->$id);
+                        $lastInsertedId = $newsheader->id;
                         
 
                         
