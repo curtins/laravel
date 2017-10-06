@@ -21,7 +21,8 @@ Route::get('/', function () {
 });
 
 Route::get('/headers', function () {   
-    return view('headers', 'NewsheaderController@index');
+    $headers = newsheaders::all();  
+    dd($headers);
 });
 
 Auth::routes();
