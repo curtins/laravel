@@ -8,11 +8,11 @@
                 <div class="panel-heading">List</div>
 
                 <div class="panel-body">
-                <li>    
-                    @foreach($newsheaders as $header)
+                <p>  
+                    @foreach ($headers as $header)
                         {{ $header['feed'] }}
                     @endforeach
-                </li>
+                </p>
 
 
 

@@ -20,8 +20,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/headers', function () {
-    return view('headers', ['newsheader' => $newsheaders]);
+Route::get('/headers', function () {   
+    return view('headers', 'NewsheaderController@index');
 });
 
 Auth::routes();
