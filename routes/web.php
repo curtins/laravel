@@ -26,7 +26,7 @@ Route::get('/', function () {
 Route::get('/headers', function () {   
     
     $headers = newsheader::all();  
-    return view('headers',compact($headers));
+    return view('headers',compact('headers'));
     //dd($headers);
 });
 
