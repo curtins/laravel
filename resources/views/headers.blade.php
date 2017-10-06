@@ -9,7 +9,7 @@
 
                 <div class="panel-body">
                 <li>    
-                    @foreach($newsheader as $header)
+                    @foreach($newsheaders as $header)
                         {{ $header['feed'] }}
                     @endforeach
                 </li>
