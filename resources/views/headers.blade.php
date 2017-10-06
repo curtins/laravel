@@ -12,7 +12,7 @@
                 <p>  
 
                     @foreach ($headers as $header)
-                        <p>{{ $header->feed }}{{ $header->created_at }}</p>
+                        <p>{{ $header->feed }}  {{ $header->created_at }}</p>
                     @endforeach
                     
                 </p>
