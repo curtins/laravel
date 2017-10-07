@@ -97,7 +97,7 @@ trait ProcessFile
 
                             //$strItem=$json['items'][0]['id']; 
                             
-                            $newsheader = newsdetail::create (array(
+                            $newsdetail = newsdetail::create (array(
                                 
                                             "headerid"  => $newsheader->id,
                                             "itemid"    => $json['items'][$x]['id'],  
