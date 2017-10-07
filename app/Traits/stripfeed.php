@@ -34,7 +34,7 @@ trait ProcessFile
         if (array_key_exists('permalinkUrl', $json)) 
         {
 
-                dd('steve');
+                
                 $detail = array(
                     
                                 "source"    => "superfeeder",
@@ -49,6 +49,7 @@ trait ProcessFile
                 
                 if  (array_key_exists('items',$json))
                 {
+                    dd('steve');
                     if (($json['status']['code'] == '200') && (count($json['items']) > 0) )
                     {
 
