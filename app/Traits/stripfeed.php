@@ -75,7 +75,21 @@ trait ProcessFile
                                                 "title"     => $json['title'],
                                                 "feed"      => $json['status']['feed']
                                     
-                            ));
+                                ));
+
+
+                                $newsdetail = newsdetail::create (array(
+                                    
+                                                "headerid"  => $newsheader->id,
+                                                "itemid"    => $json['items'][$x]['id'],  
+                                                "published"    => $json['items'][$x]['published'],  
+                                                "updated"    => $json['items'][$x]['updated'],  
+                                                "title"    => $json['items'][$x]['title'],  
+                                                "summary"    => $json['items'][$x]['summary']   , 
+                                                "content"    => "test"                            
+                                                
+                                    
+                                ));
                              
                                
                              
