@@ -25,6 +25,8 @@ trait ProcessFile
     {
         $data = file_get_contents($file);
         $json = json_decode($data,true);
+
+        dd('steve');
        
         
         $cnt = 0;
@@ -65,7 +67,7 @@ trait ProcessFile
                         
                         $lastInsertedId = $newsheader->id;
 
-                        dd('steve');
+                       
 
                         dd($json['items']);
 
