@@ -113,7 +113,7 @@ trait ProcessFile
 
 
 
-                            echo $newsdetail->id;
+                            
 
 
 
