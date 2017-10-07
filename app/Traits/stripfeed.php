@@ -95,12 +95,17 @@ trait ProcessFile
 
 
 
-                            $strItem=$json['items'][0]['id']; 
+                            //$strItem=$json['items'][0]['id']; 
                             
                             $newsheader = newsdetail::create (array(
                                 
                                             "headerid"  => $newsheader->id,
-                                            "itemid"    => $json['items'][$x]['id']                              
+                                            "itemid"    => $json['items'][$x]['id'],  
+                                            "published"    => $json['items'][$x]['published'],  
+                                            "updated"    => $json['items'][$x]['updated'],  
+                                            "title"    => $json['items'][$x]['title'],  
+                                            "summary"    => $json['items'][$x]['summary'],  
+                                            "content"    => $json['items'][$x]['content']                              
                                             
                                 
                             ));
@@ -108,7 +113,7 @@ trait ProcessFile
 
 
 
-                            echo "The number is: $x <br>";
+                            echo $newsdetail->id;
 
 
 
