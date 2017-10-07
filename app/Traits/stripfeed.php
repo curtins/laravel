@@ -77,7 +77,7 @@ trait ProcessFile
 
                        
 
-                        for ($x = 0; $x < count($json['items'], $x++) {
+                        for ($x = 0; $x <  count($json['items']); $x++) {
                             echo "The number is: $x <br>";
                         } 
 
