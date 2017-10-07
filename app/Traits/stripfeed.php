@@ -104,8 +104,8 @@ trait ProcessFile
                                             "published"    => $json['items'][$x]['published'],  
                                             "updated"    => $json['items'][$x]['updated'],  
                                             "title"    => $json['items'][$x]['title'],  
-                                            "summary"    => $json['items'][$x]['summary'],  
-                                            "content"    => $json['items'][$x]['content']                              
+                                            "summary"    => $json['items'][$x]['summary']   , 
+                                            "content"    => "test"                            
                                             
                                 
                             ));
