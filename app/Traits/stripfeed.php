@@ -78,7 +78,41 @@ trait ProcessFile
                        
 
                         for ($x = 0; $x <  count($json['items']); $x++) {
+
+
+
+                            /* 
+                            $table->increments('id');
+                            $table->integer('headerid');
+                            $table->string('itemid');
+                            $table->string('published');
+                            $table->string('updated');
+                            $table->string('title');
+                            $table->string('summary');
+                            $table->string('content');
+                            $table->timestamps();
+                            */
+
+
+
+                            $strItem=$json['items'][0]['id']; 
+                            
+                            $newsheader = newsdetail::create (array(
+                                
+                                            "headerid"  => $newsheader->id,
+                                            "itemid"    => $json['items'][$x]['id']                              
+                                            
+                                
+                            ));
+
+
+
+
                             echo "The number is: $x <br>";
+
+
+
+
                         } 
 
 
