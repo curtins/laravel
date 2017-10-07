@@ -26,13 +26,15 @@ trait ProcessFile
         $data = file_get_contents($file);
         $json = json_decode($data,true);
 
-        dd('steve');
+        
        
         
         $cnt = 0;
 
         if (array_key_exists('permalinkUrl', $json)) 
         {
+
+                dd('steve');
                 $detail = array(
                     
                                 "source"    => "superfeeder",
