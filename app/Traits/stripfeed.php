@@ -31,11 +31,11 @@ trait ProcessFile
         
         $cnt = 0;
 
-        echo ('steve1');
+         
 
         if (array_key_exists('permalinkUrl', $json)) 
         {
-            echo ('steve2');
+             
                 
                 $detail = array(
                     
@@ -51,14 +51,13 @@ trait ProcessFile
                 
                 if  (array_key_exists('items',$json))
                 {
-                    echo ('steve3');
+                    
                     
                     if (($json['status']['code'] == '200') && (count($json['items']) > 0) )
                 {
-                    echo ('steve4');
+                     
                         $strItem=$json['items'][0]['id']; 
-                        dd ('steve' . $strItem);
-
+                        
                         $newsheader = newsheader::create (array(
                             
                                         "source"    => "superfeeder",
@@ -75,6 +74,16 @@ trait ProcessFile
                         
                         
                         $lastInsertedId = $newsheader->id;
+
+                       
+
+                        for ($x = 0; $x < count($json['items'], $x++) {
+                            echo "The number is: $x <br>";
+                        } 
+
+
+
+
 
                         
 
