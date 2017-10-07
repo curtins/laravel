@@ -52,7 +52,7 @@ trait ProcessFile
                     
                     if (($json['status']['code'] == '200') && (count($json['items']) > 0) )
                     {
-                        echo('steve');
+                        
 
 
                         $newsheader = newsheader::create (array(
@@ -66,13 +66,13 @@ trait ProcessFile
                             
                         ));
 
-                        echo('steve1');
+                        
 
                         
                         
                         $lastInsertedId = $newsheader->id;
 
-                        echo('steve2');
+                        
 
                        
 
