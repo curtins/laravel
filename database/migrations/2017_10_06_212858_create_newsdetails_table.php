@@ -23,7 +23,7 @@ class CreateNewsdetailsTable extends Migration
             $table->string('published');
             $table->string('updated');
             $table->string('title');
-            $table->string('summary');
+            $table->text('summary');
             $table->string('content');
             $table->timestamps();
 
