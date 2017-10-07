@@ -75,7 +75,7 @@ trait ProcessFile
                         
                         $lastInsertedId = $newsheader->id;
 
-                       
+                        /*
 
                         for ($x = 0; $x <  count($json['items']); $x++)
                         {
@@ -92,7 +92,7 @@ trait ProcessFile
                             $table->string('summary');
                             $table->string('content');
                             $table->timestamps();
-                            */
+                          
 
 
 
@@ -111,8 +111,10 @@ trait ProcessFile
                                 
                             ));
 
+                              */
 
 
+                            
 
                             
 
