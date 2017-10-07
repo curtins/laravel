@@ -49,10 +49,10 @@ trait ProcessFile
                 
                 if  (array_key_exists('items',$json))
                 {
-                    dd('steve');
+                    
                     if (($json['status']['code'] == '200') && (count($json['items']) > 0) )
                     {
-
+                        dd('steve');
 
 
                         $newsheader = newsheader::create (array(
