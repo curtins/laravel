@@ -78,6 +78,9 @@ trait ProcessFile
                                 ));
 
 
+                                /*
+
+
                                 $newsdetail = newsdetail::create (array(
                                     
                                                 "headerid"  => $newsheader->id,
@@ -91,7 +94,7 @@ trait ProcessFile
                                     
                                 ));
                              
-                               
+                               */
                              
                             }
 
