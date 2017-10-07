@@ -26,12 +26,6 @@ trait ProcessFile
         $data = file_get_contents($file);
         $json = json_decode($data,true);
 
-        
-       
-        
-        $cnt = 0;
-
-         
 
         if (array_key_exists('permalinkUrl', $json)) 
         {
@@ -47,18 +41,13 @@ trait ProcessFile
                                 "feed"      => $json['status']['feed']
                     
                 );
-                
-                
-                if  (array_key_exists('items',$json))
+
+
+                if (array_key_exists('permalinkUrl', $json)) 
                 {
-                    
-                    
-                    if (($json['status']['code'] == '200') && (count($json['items']) > 0) )
-                    {
                      
-                        $strItem=$json['items'][0]['id']; 
                         
-                        $newsheader = newsheader::create (array(
+                        $detail = array(
                             
                                         "source"    => "superfeeder",
                                         "code"      => $json['status']['code'],                              
@@ -67,42 +56,48 @@ trait ProcessFile
                                         "title"     => $json['title'],
                                         "feed"      => $json['status']['feed']
                             
-                    ));
+                        );
+                        
+                        
+                        if  (array_key_exists('items',$json))
+                        {
 
-                        
+                             
+                            if (($json['status']['code'] == '200') && count($json['items']) > 0)   
+                            {
 
-                        
-                        
-                        $lastInsertedId = $newsheader->id;
+                                $newsheader = newsheader::create (array(
+                                    
+                                                "source"    => "superfeeder",
+                                                "code"      => $json['status']['code'],                              
+                                                "http"      => $json['status']['http'],
+                                                "nextfetch" => $json['status']['nextFetch'],
+                                                "title"     => $json['title'],
+                                                "feed"      => $json['status']['feed']
+                                    
+                            ));
+                             
+                               
+                             
+                            }
 
-                        
-                         
-                           
+                        }
+                }    
+                
+                
+                 
                     
-                }
-
-               
-
+                    
+                   
         }    
 
-        return 0;
-                        
+       
+
+         
+        return 0;                
     }
 
-    
-     
-
-
-
-
-
-
-
-
-
-
-
-
+   
 } 
 
  
