@@ -104,8 +104,8 @@ trait ProcessFile
                                                     "published"    => $strpublish,
                                                     "updated"    => $strupdated,
                                                     "title"    => $strtitle ,
-                                                    "summary"    => $strsummary    
-                                     //               "content"    => $strcontent                            
+                                                    "summary"    => $strsummary   , 
+                                                    "content"    => " "                           
                                                     
                                         
                                     ));
