@@ -26,7 +26,7 @@ trait ProcessFile
         $data = file_get_contents($file);
         $json = json_decode($data,true);
 
-        //echo "steve9";
+        echo "strip";
        
 
 
