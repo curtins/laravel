@@ -48,6 +48,8 @@ trait ProcessFile
 
                 if (array_key_exists('permalinkUrl', $json)) 
                 {
+
+
                      
                         
                         $detail = array(
@@ -87,16 +89,46 @@ trait ProcessFile
                                 for ($x = 0; $x < count($json['items']); $x++)
                                 {
                                     echo "steve2";
+                                    /*
+                                    $table->increments('id');
+                                    $table->integer('headerid');
+                                    $table->string('itemid');
+                                    $table->string('published');
+                                    $table->string('updated');
+                                    $table->string('title');
+                                    $table->text('summary');
+                                    $table->string('content');
+                                    $table->timestamps();
+                                    */
+
+                                    $strpublish = $json['items'][$x]['publish'];  
+                                    $strupdated = $json['items'][$x]['updated'] ; 
+                                    $strupdated = $json['items'][$x]['title']  ;
+                                    $strupdated = $json['items'][$x]['summary'] ; 
+                                    $strupdated = $json['items'][$x]['content']  ;
+
+                                   if ($json['items'][$x]['published']==null)
+                                       $strpublish='N/A';  
+                                    if ($json['items'][$x]['updated']==null)
+                                        $strupdated='N/A';  
+                                    if ($json['items'][$x]['title']==null)
+                                        $strtitle='N/A';  
+                                    if ($json['items'][$x]['summary']==null)
+                                        $strsummary='N/A';  
+                                    if ($json['items'][$x]['content']==null)
+                                        $strcontent='N/A';  
+
+
 
                                     $newsdetail = newsdetail::create (array(
                                         
                                                     "headerid"  => $newsheader->id,
                                                     "itemid"    => $json['items'][$x]['id'],  
-                                                    "published"    => $json['items'][$x]['published'],  
-                                                    "updated"    => $json['items'][$x]['updated'],  
-                                                    "title"    => $json['items'][$x]['title'],  
-                                                    "summary"    => $json['items'][$x]['summary']   , 
-                                                    "content"    => "test"                            
+                                                    "published"    => $strpublish,
+                                                    "updated"    => $strupdated,
+                                                    "title"    => $strtitle ,
+                                                    "summary"    => $strsummary   , 
+                                                    "content"    => $strcontent                            
                                                     
                                         
                                     ));
