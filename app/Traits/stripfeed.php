@@ -32,7 +32,7 @@ trait ProcessFile
 
         if (array_key_exists('permalinkUrl', $json)) 
         {
-                echo "steve99";
+                
                 
                 $detail = array(
                     
@@ -67,7 +67,7 @@ trait ProcessFile
                         if  (array_key_exists('items',$json))
                         {
 
-                            echo "steve";
+                            
 
                              
                             if (($json['status']['code'] == '200') && count($json['items']) > 0)   
@@ -89,7 +89,7 @@ trait ProcessFile
                                 for ($x = 0; $x < count($json['items']); $x++)
                                 {
                                     echo "steve2";
-                                    
+
                                     /*
                                     $table->increments('id');
                                     $table->integer('headerid');
