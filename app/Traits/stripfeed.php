@@ -73,7 +73,7 @@ trait ProcessFile
                             if (($json['status']['code'] == '200') && count($json['items']) > 0)   
                             {
 
-                                //echo "steve1";
+                                echo "newsheader";
                                  
 
                                 $newsheader = newsheader::create (array(
@@ -90,7 +90,7 @@ trait ProcessFile
 
                                 for ($x = 0; $x < count($json['items']); $x++)
                                 {
-                                    echo "steve2";
+                                    echo "newsdetail";
 
                                      /*
                                     $table->increments('id');
@@ -106,7 +106,7 @@ trait ProcessFile
 
                                     $strpublish = $json['items'][$x]['publish'];  
                                     $strupdated = $json['items'][$x]['updated'] ; 
-                                    $strtitle = $json['items'][$x]['title']  ;
+                                    $strtitle =   $json['items'][$x]['title']  ;
                                     $strsummary = $json['items'][$x]['summary'] ; 
                                     $strcontent = $json['items'][$x]['content']  ;
 
