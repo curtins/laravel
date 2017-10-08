@@ -27,12 +27,12 @@ trait ProcessFile
         $json = json_decode($data,true);
 
 
-        echo "steve99";
+       
 
 
         if (array_key_exists('permalinkUrl', $json)) 
         {
-             
+                echo "steve99";
                 
                 $detail = array(
                     
