@@ -78,7 +78,7 @@ trait ProcessFile
                                     $table->timestamps();
                                    */
 
-                                    $strpublish = $json['items'][$x]['publish'];  
+                                    $strpublish = $json['items'][$x]['published'];  
                                     $strupdated = $json['items'][$x]['updated'] ; 
                                     $strtitle =   $json['items'][$x]['title']  ;
                                     $strsummary = $json['items'][$x]['summary'] ; 
