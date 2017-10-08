@@ -82,7 +82,7 @@ trait ProcessFile
                                     $strupdated = $json['items'][$x]['updated'] ; 
                                     $strtitle =   $json['items'][$x]['title']  ;
                                     $strsummary = $json['items'][$x]['summary'] ; 
-                                    $strcontent = $json['items'][$x]['content']  ;
+                                    //$strcontent = $json['items'][$x]['content']  ;
 
                                    if ($json['items'][$x]['published']==null)
                                        $strpublish='N/A';  
@@ -92,8 +92,8 @@ trait ProcessFile
                                         $strtitle='N/A';  
                                     if ($json['items'][$x]['summary']==null)
                                         $strsummary='N/A';  
-                                    if ($json['items'][$x]['content']==null)
-                                        $strcontent='N/A';  
+                                    //if ($json['items'][$x]['content']==null)
+                                    //    $strcontent='N/A';  
 
 
 
@@ -104,8 +104,8 @@ trait ProcessFile
                                                     "published"    => $strpublish,
                                                     "updated"    => $strupdated,
                                                     "title"    => $strtitle ,
-                                                    "summary"    => $strsummary   , 
-                                                    "content"    => $strcontent                            
+                                                    "summary"    => $strsummary    
+                                     //               "content"    => $strcontent                            
                                                     
                                         
                                     ));
