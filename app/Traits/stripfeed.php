@@ -89,6 +89,7 @@ trait ProcessFile
                                 for ($x = 0; $x < count($json['items']); $x++)
                                 {
                                     echo "steve2";
+                                    
                                     /*
                                     $table->increments('id');
                                     $table->integer('headerid');
@@ -99,7 +100,7 @@ trait ProcessFile
                                     $table->text('summary');
                                     $table->string('content');
                                     $table->timestamps();
-                                    */
+                                   
 
                                     $strpublish = $json['items'][$x]['publish'];  
                                     $strupdated = $json['items'][$x]['updated'] ; 
@@ -132,6 +133,9 @@ trait ProcessFile
                                                     
                                         
                                     ));
+
+
+                                     */
                                     
                                 } 
                                 
