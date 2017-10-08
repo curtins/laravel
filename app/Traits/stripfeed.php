@@ -64,7 +64,7 @@ trait ProcessFile
 
                                 for ($x = 0; $x < count($json['items']); $x++)
                                 {
-                                    dd($json);
+                                    dd(count($json['items']));
 
                                      /*
                                     $table->increments('id');
