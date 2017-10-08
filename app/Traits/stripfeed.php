@@ -78,23 +78,26 @@ trait ProcessFile
                                 ));
 
 
-                                /*
-
-
-                                $newsdetail = newsdetail::create (array(
+                                for ($x = 0; $x < count($json['items']; $x++)
+                                {
+                                    //echo "The number is: $x <br>";
+                                    $newsdetail = newsdetail::create (array(
+                                        
+                                                    "headerid"  => $newsheader->id,
+                                                    "itemid"    => $json['items'][$x]['id'],  
+                                                    "published"    => $json['items'][$x]['published'],  
+                                                    "updated"    => $json['items'][$x]['updated'],  
+                                                    "title"    => $json['items'][$x]['title'],  
+                                                    "summary"    => $json['items'][$x]['summary']   , 
+                                                    "content"    => "test"                            
+                                                    
+                                        
+                                    ));
                                     
-                                                "headerid"  => $newsheader->id,
-                                                "itemid"    => $json['items'][$x]['id'],  
-                                                "published"    => $json['items'][$x]['published'],  
-                                                "updated"    => $json['items'][$x]['updated'],  
-                                                "title"    => $json['items'][$x]['title'],  
-                                                "summary"    => $json['items'][$x]['summary']   , 
-                                                "content"    => "test"                            
-                                                
-                                    
-                                ));
+                                } 
+                                
                              
-                               */
+                               
                              
                             }
 
