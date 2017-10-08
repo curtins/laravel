@@ -76,7 +76,7 @@ class RSSDataCommand extends Command
        { 
            $strArray=[];
 
-           
+           echo "loop";
 
            $strPassArray = $this->StripFile($file); 
            //dd($strPassArray);
