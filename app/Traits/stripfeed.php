@@ -23,22 +23,11 @@ trait ProcessFile
  
     public function StripFile($file)
     {
-
-       
-
         $data = file_get_contents($file);
         $json = json_decode($data,true);
 
-       
-
-      
-       
-
-
         if (array_key_exists('permalinkUrl', $json)) 
-        {
-                
-                dd($json);
+        {      
                 
                 $detail = array(
                     
@@ -53,33 +42,12 @@ trait ProcessFile
 
 
                 if (array_key_exists('permalinkUrl', $json)) 
-                {
+                {       
 
-
-                     
-                        
-                        $detail = array(
-                            
-                                        "source"    => "superfeeder",
-                                        "code"      => $json['status']['code'],                              
-                                        "http"      => $json['status']['http'],
-                                        "nextfetch" => $json['status']['nextFetch'],
-                                        "title"     => $json['title'],
-                                        "feed"      => $json['status']['feed']
-                            
-                        );
-                        
-                        
-                        if  (array_key_exists('items',$json))
-                        {
-
-                            
-
-                             
                             if (($json['status']['code'] == '200') && count($json['items']) > 0)   
                             {
 
-                                echo "newsheader";
+                               
                                  
 
                                 $newsheader = newsheader::create (array(
@@ -96,7 +64,7 @@ trait ProcessFile
 
                                 for ($x = 0; $x < count($json['items']); $x++)
                                 {
-                                    echo "newsdetail";
+                                    dd($json);
 
                                      /*
                                     $table->increments('id');
@@ -152,7 +120,7 @@ trait ProcessFile
                              
                             }
 
-                        }
+                        
                 }    
                 
                 
