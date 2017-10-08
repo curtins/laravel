@@ -92,7 +92,7 @@ trait ProcessFile
                                 {
                                     echo "steve2";
 
-                                    /*
+                                     /*
                                     $table->increments('id');
                                     $table->integer('headerid');
                                     $table->string('itemid');
@@ -102,13 +102,13 @@ trait ProcessFile
                                     $table->text('summary');
                                     $table->string('content');
                                     $table->timestamps();
-                                   
+                                   */
 
                                     $strpublish = $json['items'][$x]['publish'];  
                                     $strupdated = $json['items'][$x]['updated'] ; 
-                                    $strupdated = $json['items'][$x]['title']  ;
-                                    $strupdated = $json['items'][$x]['summary'] ; 
-                                    $strupdated = $json['items'][$x]['content']  ;
+                                    $strtitle = $json['items'][$x]['title']  ;
+                                    $strsummary = $json['items'][$x]['summary'] ; 
+                                    $strcontent = $json['items'][$x]['content']  ;
 
                                    if ($json['items'][$x]['published']==null)
                                        $strpublish='N/A';  
