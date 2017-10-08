@@ -26,7 +26,7 @@ trait ProcessFile
         $data = file_get_contents($file);
         $json = json_decode($data,true);
 
-        echo "steve9";
+        //echo "steve9";
        
 
 
@@ -73,7 +73,7 @@ trait ProcessFile
                             if (($json['status']['code'] == '200') && count($json['items']) > 0)   
                             {
 
-                                echo "steve1";
+                                //echo "steve1";
                                  
 
                                 $newsheader = newsheader::create (array(
@@ -137,7 +137,7 @@ trait ProcessFile
                                     ));
 
 
-                                     */
+                                      
                                     
                                 } 
                                 
