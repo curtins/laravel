@@ -62,9 +62,12 @@ trait ProcessFile
                         if  (array_key_exists('items',$json))
                         {
 
+                            echo "steve";
+
                              
                             if (($json['status']['code'] == '200') && count($json['items']) > 0)   
                             {
+                                echo "steve1";
 
                                 $newsheader = newsheader::create (array(
                                     
@@ -80,7 +83,8 @@ trait ProcessFile
 
                                 for ($x = 0; $x < count($json['items']); $x++)
                                 {
-                                    //echo "The number is: $x <br>";
+                                    echo "steve2";
+
                                     $newsdetail = newsdetail::create (array(
                                         
                                                     "headerid"  => $newsheader->id,
