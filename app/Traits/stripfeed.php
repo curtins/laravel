@@ -99,7 +99,7 @@ trait ProcessFile
 
                                     $newsdetail = newsdetail::create (array(
                                         
-                                                    "headerid"  => $newsheader->id,
+                                                    "newsheader_id"  => $newsheader->id,
                                                     "itemid"    => $json['items'][$x]['id'],  
                                                     "published"    => $strpublish,
                                                     "updated"    => $strupdated,

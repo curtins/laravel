@@ -18,7 +18,7 @@ class CreateNewsdetailsTable extends Migration
 
            
             $table->increments('id');
-            $table->integer('headerid');
+            $table->integer('newsheader_id');
             $table->string('itemid');
             $table->string('published');
             $table->string('updated');
