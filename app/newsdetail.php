@@ -9,9 +9,9 @@ class newsdetail extends Model
     protected $guarded = [];
 
 
-    public function  newsdetail()
+    public function  newsheader()
     {
-        return $this-belongsTo('App\newsheader' );
+        return $this->belongsTo('App\newsheader' );
     }
 
 }
