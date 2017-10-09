@@ -11,7 +11,7 @@ class newsdetail extends Model
 
     public function  newsdetail()
     {
-        $this-belongsTo('App\newsheader' );
+        return $this-belongsTo('App\newsheader' );
     }
 
 }
