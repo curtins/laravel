@@ -86,6 +86,23 @@ trait ProcessFile
                                     {
                                     $strpublish ="";      
                                     }
+
+
+                                    if (array_key_exists('content', $json['items'][$x])) 
+                                    {
+                                        $strcontent = $json['items'][$x]['content'];
+                                    }
+                                    else
+                                    {
+                                    $strcontent ="";      
+                                    }
+
+
+
+
+
+
+
                                     $strupdated = $json['items'][$x]['updated'] ; 
                                     $strtitle =   $json['items'][$x]['title']  ;
                                     $strsummary = $json['items'][$x]['summary'] ; 
