@@ -129,6 +129,8 @@ trait ProcessFile
                                     $strsummary = $json['items'][$x]['summary'] ; 
                                     //$strcontent = $json['items'][$x]['content']  ;
 
+
+                                   */ 
                                    if ($json['items'][$x]['published']==null)
                                        $strpublish='N/A';  
                                     if ($json['items'][$x]['updated']==null)
