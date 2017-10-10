@@ -97,6 +97,35 @@ trait ProcessFile
                                     $strcontent ="";      
                                     }
 
+                                    if (array_key_exists('updated', $json['items'][$x])) 
+                                    {
+                                        $strupdated = $json['items'][$x]['updated'];
+                                    }
+                                    else
+                                    {
+                                    $strupdated ="";      
+                                    }
+
+                                    if (array_key_exists('title', $json['items'][$x])) 
+                                    {
+                                        $strtitle = $json['items'][$x]['title'];
+                                    }
+                                    else
+                                    {
+                                    $strtitle ="";      
+                                    }
+
+
+                                    if (array_key_exists('summary', $json['items'][$x])) 
+                                    {
+                                        $strsummary = $json['items'][$x]['summary'];
+                                    }
+                                    else
+                                    {
+                                    $strsummary ="";      
+                                    }
+
+                                    /*
 
 
 
@@ -119,7 +148,7 @@ trait ProcessFile
                                     //if ($json['items'][$x]['content']==null)
                                     //    $strcontent='N/A';  
 
-
+                                    */
 
                                     $newsdetail = newsdetail::create (array(
                                         
@@ -134,11 +163,6 @@ trait ProcessFile
                                         
                                     ));
 
-
-                                     
-
-
-                                      
                                     
                                 } 
                                 
