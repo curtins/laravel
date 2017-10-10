@@ -78,7 +78,8 @@ trait ProcessFile
                                     $table->timestamps();
                                    */
 
-                                    $strpublish = $json['items'][$x]['published'];  
+                                    if (array_key_exists('published', $json['items'][$x]['published'])
+                                        $strpublish = $json['items'][$x]['published'];  
                                     $strupdated = $json['items'][$x]['updated'] ; 
                                     $strtitle =   $json['items'][$x]['title']  ;
                                     $strsummary = $json['items'][$x]['summary'] ; 
