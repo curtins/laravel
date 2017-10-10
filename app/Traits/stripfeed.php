@@ -84,10 +84,10 @@ trait ProcessFile
                                     }
                                     else
                                     {
-                                    $strpublish ="";      
+                                    $strpublish =" ";      
                                     }
 
-                                    dd($strpublish);
+                                    //dd($strpublish);
 
 
                                     if (array_key_exists('content', $json['items'][$x])) 
@@ -96,7 +96,7 @@ trait ProcessFile
                                     }
                                     else
                                     {
-                                    $strcontent ="";      
+                                    $strcontent =" ";      
                                     }
 
                                     if (array_key_exists('updated', $json['items'][$x])) 
@@ -105,7 +105,7 @@ trait ProcessFile
                                     }
                                     else
                                     {
-                                    $strupdated ="";      
+                                    $strupdated =" ";      
                                     }
 
                                     if (array_key_exists('title', $json['items'][$x])) 
@@ -114,7 +114,7 @@ trait ProcessFile
                                     }
                                     else
                                     {
-                                    $strtitle ="";      
+                                    $strtitle =" ";      
                                     }
 
 
@@ -124,7 +124,7 @@ trait ProcessFile
                                     }
                                     else
                                     {
-                                    $strsummary ="";      
+                                    $strsummary =" ";      
                                     }
 
                                     /*
