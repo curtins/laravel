@@ -9,7 +9,7 @@ class newsdetail extends Model
     protected $guarded = [];
 
 
-    public function  newsheader()
+    public function  newsdetail()
     {
         return $this->hasOne('newsheader' );
     }
