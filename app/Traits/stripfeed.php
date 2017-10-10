@@ -87,6 +87,8 @@ trait ProcessFile
                                     $strpublish ="";      
                                     }
 
+                                    dd($strpublish);
+
 
                                     if (array_key_exists('content', $json['items'][$x])) 
                                     {
