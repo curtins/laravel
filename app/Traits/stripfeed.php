@@ -85,6 +85,9 @@ trait ProcessFile
                                     $strcontent ="N/A";  
 
 
+                                    /*
+
+
                                     if (array_key_exists('published', $json['items'][$x])) 
                                      {
                                         $strpublish = $json['items'][$x]['published'];
