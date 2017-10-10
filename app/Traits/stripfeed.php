@@ -84,10 +84,9 @@ trait ProcessFile
                                     }
                                     else
                                     {
-                                    $strpublish =" ";      
+                                    $strpublish ="N/A";      
                                     }
 
-                                    //dd($strpublish);
 
 
                                     if (array_key_exists('content', $json['items'][$x])) 
@@ -96,7 +95,7 @@ trait ProcessFile
                                     }
                                     else
                                     {
-                                    $strcontent =" ";      
+                                    $strcontent ="N/A";      
                                     }
 
                                     if (array_key_exists('updated', $json['items'][$x])) 
@@ -105,7 +104,7 @@ trait ProcessFile
                                     }
                                     else
                                     {
-                                    $strupdated =" ";      
+                                    $strupdated ="N/A";      
                                     }
 
                                     if (array_key_exists('title', $json['items'][$x])) 
@@ -114,7 +113,7 @@ trait ProcessFile
                                     }
                                     else
                                     {
-                                    $strtitle =" ";      
+                                    $strtitle ="N/A";      
                                     }
 
 
@@ -124,7 +123,7 @@ trait ProcessFile
                                     }
                                     else
                                     {
-                                    $strsummary =" ";      
+                                    $strsummary ="N/A";      
                                     }
 
                                     /*
@@ -151,6 +150,8 @@ trait ProcessFile
                                     //    $strcontent='N/A';  
 
                                     */
+
+                                     dd($strpublish);
 
                                     $newsdetail = newsdetail::create (array(
                                         
