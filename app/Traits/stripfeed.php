@@ -86,33 +86,33 @@ trait ProcessFile
 
 
                                     if (array_key_exists('published', $json['items'][$x])) 
-                                     
+                                     {
                                         $strpublish = $json['items'][$x]['published'];
-                                     
-                                     dd($strpublish);
+                                     } 
+                                    
 
 
 
                                     if (array_key_exists('content', $json['items'][$x])) 
-                                  
+                                    {
                                         $strcontent = $json['items'][$x]['content'];
-                                    
+                                    }
 
                                     if (array_key_exists('updated', $json['items'][$x])) 
-                                  
+                                    {
                                         $strupdated = $json['items'][$x]['updated'];
-                                    
+                                    }
 
                                     if (array_key_exists('title', $json['items'][$x])) 
-                                   
+                                    {
                                         $strtitle = $json['items'][$x]['title'];
-                                    
+                                    }
 
 
                                     if (array_key_exists('summary', $json['items'][$x])) 
-                                     
+                                    { 
                                         $strsummary = $json['items'][$x]['summary'];
-                                    
+                                    }
 
                                     /*
 
