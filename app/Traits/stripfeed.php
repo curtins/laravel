@@ -66,23 +66,18 @@ trait ProcessFile
                                 {
                                     
 
-                                     /*
-                                    $table->increments('id');
-                                    $table->integer('headerid');
-                                    $table->string('itemid');
-                                    $table->string('published');
-                                    $table->string('updated');
-                                    $table->string('title');
-                                    $table->text('summary');
-                                    $table->string('content');
-                                    $table->timestamps();
-                                   */
+                                    
 
                                     $strpublish ="N/A";                                    
                                     $strupdated ="N/A"; 
                                     $strtitle ="N/A";  
                                     $strsummary ="N/A";  
                                     $strcontent ="N/A";  
+
+                                    $strpublish = $json['items'][$x]['published'];
+                                    $strupdated = $json['items'][$x]['updated'];
+                                    $strtitle = $json['items'][$x]['title'];
+                                    $strsummary = $json['items'][$x]['summary'];
 
 
                                     /*
@@ -130,7 +125,7 @@ trait ProcessFile
                                     //$strcontent = $json['items'][$x]['content']  ;
 
 
-                                   */ 
+                                   
                                    if ($json['items'][$x]['published']==null)
                                        $strpublish='N/A';  
                                     if ($json['items'][$x]['updated']==null)
@@ -142,10 +137,10 @@ trait ProcessFile
                                     //if ($json['items'][$x]['content']==null)
                                     //    $strcontent='N/A';  
 
-                                    */
+                                     
 
                                     // dd($strpublish);
-
+                                    */ 
                                     $newsdetail = newsdetail::create (array(
                                         
                                                     "newsheader_id"  => $newsheader->id,
