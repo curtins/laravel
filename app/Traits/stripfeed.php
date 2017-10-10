@@ -78,53 +78,40 @@ trait ProcessFile
                                     $table->timestamps();
                                    */
 
+                                    $strpublish ="N/A";                                    
+                                    $strupdated ="N/A"; 
+                                    $strtitle ="N/A";  
+                                    $strsummary ="N/A";  
+                                    $strcontent ="N/A";  
+
+
                                     if (array_key_exists('published', $json['items'][$x])) 
-                                    {
+                                     
                                         $strpublish = $json['items'][$x]['published'];
-                                    }
-                                    else
-                                    {
-                                    $strpublish ="N/A";      
-                                    }
+                                     
 
 
 
                                     if (array_key_exists('content', $json['items'][$x])) 
-                                    {
+                                  
                                         $strcontent = $json['items'][$x]['content'];
-                                    }
-                                    else
-                                    {
-                                    $strcontent ="N/A";      
-                                    }
+                                    
 
                                     if (array_key_exists('updated', $json['items'][$x])) 
-                                    {
+                                  
                                         $strupdated = $json['items'][$x]['updated'];
-                                    }
-                                    else
-                                    {
-                                    $strupdated ="N/A";      
-                                    }
+                                    
 
                                     if (array_key_exists('title', $json['items'][$x])) 
-                                    {
+                                   
                                         $strtitle = $json['items'][$x]['title'];
-                                    }
-                                    else
-                                    {
-                                    $strtitle ="N/A";      
-                                    }
+                                    
 
 
                                     if (array_key_exists('summary', $json['items'][$x])) 
-                                    {
+                                     
                                         $strsummary = $json['items'][$x]['summary'];
-                                    }
-                                    else
-                                    {
-                                    $strsummary ="N/A";      
-                                    }
+                                    
 
                                     /*
 
@@ -151,7 +138,7 @@ trait ProcessFile
 
                                     */
 
-                                     dd($strpublish);
+                                    // dd($strpublish);
 
                                     $newsdetail = newsdetail::create (array(
                                         
@@ -161,7 +148,7 @@ trait ProcessFile
                                                     "updated"    => $strupdated,
                                                     "title"    => $strtitle ,
                                                     "summary"    => $strsummary   , 
-                                                    "content"    => " "                           
+                                                    "content"    => $strcontent                          
                                                     
                                         
                                     ));
