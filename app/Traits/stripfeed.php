@@ -89,6 +89,7 @@ trait ProcessFile
                                      
                                         $strpublish = $json['items'][$x]['published'];
                                      
+                                     dd($strpublish);
 
 
 
