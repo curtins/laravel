@@ -31,7 +31,12 @@ Route::get('/headers', function () {
 });
 
 Route::get('/report', function () {   
+
+    $reflection = new ReflectionClass('newsheader');  //  inspect the methods and constants of any class!
     
+
+
+    /*
     $headers = newsheader::all();  
 
     foreach($headers as $header)
@@ -44,6 +49,7 @@ Route::get('/report', function () {
 
     //return view('headers',compact('headers'));
     //dd($headers);
+    */
 });
 
 Auth::routes();
