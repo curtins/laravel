@@ -11,7 +11,7 @@ class newsdetail extends Model
 
     public function  newsheader()
     {
-        return $this->hasOne('newsheader' );
+        return $this->belongsTo('App\newsheader');
     }
 
 }

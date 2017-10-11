@@ -11,7 +11,7 @@ class newsheader extends Model
 
     public function  newsdetail()
     {
-        return $this->hasMany('newsdetail' );
+        return $this->hasMany('App\newsdetail','newsheader_id' );
     }
 
 
