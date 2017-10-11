@@ -34,7 +34,7 @@ Route::get('/report', function () {
 
     $reflection = new ReflectionClass('App\newsheader');  //  inspect the methods and constants of any class!
     
-
+    echo $reflection->getMethods();
 
     /*
     $headers = newsheader::all();  
