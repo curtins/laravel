@@ -74,8 +74,8 @@ trait ProcessFile
                                     $strsummary ="N/A";  
                                     $strcontent ="N/A";  
 
-                                    $strpublish = $json['items'][$x]['published'];
-                                    $strupdated = $json['items'][$x]['updated'];
+                                    //$strpublish = $json['items'][$x]['published'];
+                                    //$strupdated = $json['items'][$x]['updated'];
                                     $strtitle = $json['items'][$x]['title'];
                                     $strsummary = $json['items'][$x]['summary'];
 
@@ -136,17 +136,17 @@ trait ProcessFile
                                         $strsummary='N/A';  
                                     //if ($json['items'][$x]['content']==null)
                                     //    $strcontent='N/A';  
-
+                                     */ 
                                      
 
-                                    // dd($strpublish);
-                                    */ 
+                                    //dd($strpublish);
+                                   
                                     $newsdetail = newsdetail::create (array(
                                         
                                                     "newsheader_id"  => $newsheader->id,
                                                     "itemid"    => $json['items'][$x]['id'],  
-                                                    "published"    => $strpublish,
-                                                    "updated"    => $strupdated,
+                                    //                "published"    => $strpublish,
+                                    //                "updated"    => $strupdated,
                                                     "title"    => $strtitle ,
                                                     "summary"    => $strsummary   , 
                                                     "content"    => $strcontent                          
