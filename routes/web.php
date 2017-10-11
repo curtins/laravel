@@ -32,7 +32,7 @@ Route::get('/headers', function () {
 
 Route::get('/report', function () {   
 
-    $reflection = new ReflectionClass('newsheader');  //  inspect the methods and constants of any class!
+    $reflection = new ReflectionClass('App\newsheader');  //  inspect the methods and constants of any class!
     
 
 
