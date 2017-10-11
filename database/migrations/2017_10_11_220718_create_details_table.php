@@ -16,9 +16,7 @@ class CreateDetailsTable extends Migration
         Schema::create('details', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('header_id');
-            $table->string('itemid');
-            $table->string('published');
-            $table->string('updated');
+            $table->string('itemid');             
             $table->string('title');
             $table->text('summary');
             $table->string('content');
