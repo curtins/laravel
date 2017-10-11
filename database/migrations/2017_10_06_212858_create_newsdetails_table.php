@@ -27,6 +27,11 @@ class CreateNewsdetailsTable extends Migration
             $table->string('content');
             $table->timestamps();
 
+            $table->foreign('newsheader_id')
+            ->references('id')
+            ->on('newsheaders')
+            ->onDelete('cascade');
+
         });
     }
 
