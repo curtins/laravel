@@ -14,8 +14,6 @@ class CreateNewsdetailsTable extends Migration
     public function up()
     {
         Schema::create('newsdetails', function (Blueprint $table) {
-
-
            
             $table->increments('id');
             $table->integer('newsheader_id');
