@@ -29,8 +29,8 @@ class CreateNewsdetailsTable extends Migration
 
             $table->foreign('newsheader_id')
             ->references('id')
-            ->on('newsheaders')
-            ->onDelete('cascade');
+            ->on('newsheaders');
+             
 
         });
     }
