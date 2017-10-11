@@ -46,9 +46,7 @@ trait ProcessFile
 
                             if (($json['status']['code'] == '200') && count($json['items']) > 0)   
                             {
-
-                               
-                                 
+    
 
                                 $newsheader = Header::create (array(
                                     
@@ -64,10 +62,6 @@ trait ProcessFile
 
                                 for ($x = 0; $x < count($json['items']); $x++)
                                 {
-                                    
-
-                                    
-
                                     $strpublish ="N/A";                                    
                                     $strupdated ="N/A"; 
                                     $strtitle ="N/A";  
@@ -143,7 +137,7 @@ trait ProcessFile
                                    
                                     $newsdetail = Detail::create (array(
                                         
-                                                    "newsheader_id"  => $newsheader->id,
+                                                    "header_id"  => $newsheader->id,
                                                     "itemid"    => $json['items'][$x]['id'],  
                                     //                "published"    => $strpublish,
                                     //                "updated"    => $strupdated,
