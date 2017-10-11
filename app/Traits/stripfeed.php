@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Traits;
-use App\newsheader;
-use App\newsdetail;
+use App\Header;;
+use App\Detail;
 
 use Illuminate\Support\Facades\Log;
 
