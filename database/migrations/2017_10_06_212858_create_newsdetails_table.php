@@ -25,6 +25,7 @@ class CreateNewsdetailsTable extends Migration
             $table->string('content');
             $table->timestamps();
 
+            
              
 
         });
