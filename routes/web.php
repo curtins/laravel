@@ -30,6 +30,22 @@ Route::get('/headers', function () {
     //dd($headers);
 });
 
+Route::get('/report', function () {   
+    
+    $headers = newsheader::all();  
+
+    foreach($headers as $header)
+    {
+
+        echo $header->title->summary;
+
+
+    }
+
+    //return view('headers',compact('headers'));
+    //dd($headers);
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
