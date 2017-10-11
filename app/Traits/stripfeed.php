@@ -50,7 +50,7 @@ trait ProcessFile
                                
                                  
 
-                                $newsheader = newsheader::create (array(
+                                $newsheader = Header::create (array(
                                     
                                                 "source"    => "superfeeder",
                                                 "code"      => $json['status']['code'],                              
@@ -141,7 +141,7 @@ trait ProcessFile
 
                                     //dd($strpublish);
                                    
-                                    $newsdetail = newsdetail::create (array(
+                                    $newsdetail = Detail::create (array(
                                         
                                                     "newsheader_id"  => $newsheader->id,
                                                     "itemid"    => $json['items'][$x]['id'],  
