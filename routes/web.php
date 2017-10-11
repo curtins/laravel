@@ -37,7 +37,7 @@ Route::get('/report', function () {
     foreach($headers as $header)
     {
 
-        echo $header->title->summary;
+        echo $header->title;
 
 
     }
