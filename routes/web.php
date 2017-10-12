@@ -11,7 +11,8 @@
 |
 */
 
-use App\newsheader;
+use App\header;
+use App\detail;
 
 Horizon::auth(function ($request) {
     return true;
