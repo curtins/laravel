@@ -33,11 +33,13 @@ Route::get('/headers', function () {
 
 Route::get('/report', function () {  
     
-    $test = App\Header::has('Detail')->get();
+    $head = DB::table('headers')
+    ->select('title', 'feed')
+    ->get();
 
     //$reflection = new ReflectionClass('App\newsheader');  //  inspect the methods and constants of any class!
     
-    dd($test->feed);
+     
 
     /*
     $headers = newsheader::all();  
