@@ -11,8 +11,8 @@
 |
 */
 
-use App\header;
-use App\detail;
+use App\Header;
+use App\Detail;
 
 Horizon::auth(function ($request) {
     return true;
@@ -26,7 +26,7 @@ Route::get('/', function () {
 
 Route::get('/headers', function () {   
     
-    $headers = header::all();  
+    $headers = Header::all();  
     return view('headers',compact('headers'));
     //dd($headers);
 });
