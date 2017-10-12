@@ -41,6 +41,8 @@ Route::get('/report', function () {
     ->select('header_id','itemid', 'title', 'summary')
     ->get();
 
+    return view('reports',compact('$head','$detail'));
+
     //$reflection = new ReflectionClass('App\newsheader');  //  inspect the methods and constants of any class!
     
      
