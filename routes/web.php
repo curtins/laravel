@@ -34,7 +34,11 @@ Route::get('/headers', function () {
 Route::get('/report', function () {  
     
     $head = DB::table('headers')
-    ->select('title', 'feed')
+    ->select('id','title', 'feed')
+    ->get();
+
+    $detail = DB::table('details')
+    ->select('header_id','itemid', 'title', 'summary')
     ->get();
 
     //$reflection = new ReflectionClass('App\newsheader');  //  inspect the methods and constants of any class!
