@@ -37,7 +37,7 @@ Route::get('/report', function () {
 
     //$reflection = new ReflectionClass('App\newsheader');  //  inspect the methods and constants of any class!
     
-    dd($test);
+    dd($test->feed);
 
     /*
     $headers = newsheader::all();  
