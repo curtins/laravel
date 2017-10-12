@@ -31,11 +31,13 @@ Route::get('/headers', function () {
     //dd($headers);
 });
 
-Route::get('/report', function () {   
-
-    $reflection = new ReflectionClass('App\newsheader');  //  inspect the methods and constants of any class!
+Route::get('/report', function () {  
     
-    dd($reflection);
+    $test = App\Header::has('Detail')->get();
+
+    //$reflection = new ReflectionClass('App\newsheader');  //  inspect the methods and constants of any class!
+    
+    dd($test);
 
     /*
     $headers = newsheader::all();  
