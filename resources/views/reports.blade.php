@@ -12,7 +12,7 @@
                     
 						 @foreach($detail as $details)
 
-                            <tr><td><td>{{$details->feed}}</td></tr> 
+                            <tr><td><td>{{$details->feed}}{{$details->itemid}}{{$details->title}}</td></tr> 
                     
                         @endforeach 
                     
