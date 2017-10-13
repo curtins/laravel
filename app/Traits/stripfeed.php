@@ -72,6 +72,7 @@ trait ProcessFile
                                     //$strupdated = $json['items'][$x]['updated'];
                                     $strtitle = $json['items'][$x]['title'];
                                     $strsummary = $json['items'][$x]['summary'];
+                                    $strFeedDetail     => $json['status']['feed']
 
 
                                     /*
@@ -143,7 +144,8 @@ trait ProcessFile
                                     //                "updated"    => $strupdated,
                                                     "title"    => $strtitle ,
                                                     "summary"    => $strsummary   , 
-                                                    "content"    => $strcontent                          
+                                                    "content"    => $strcontent     ,
+                                                    "feed"       => $strFeedDetail                     
                                                     
                                         
                                     ));
