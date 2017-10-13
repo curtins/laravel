@@ -32,7 +32,7 @@ Route::get('/headers', function () {
 });
 
 Route::get('/report', function () {  
-    
+    /*
     $header = DB::table('headers')
     ->select('feed')
     ->groupBy('feed')
@@ -40,13 +40,16 @@ Route::get('/report', function () {
 
     ->get();
 
-    $details = DB::table('details')
-    ->select('header_id','itemid', 'title', 'summary')
+    */
+
+    $detail = DB::table('details')
+    ->select('field','itemid', 'title')
+    ->orderBy('field','id')
     ->get();
 
     
 
-    return view('reports')->with('header', $header);
+    return view('reports')->with('detail', $detail);
 
     //$reflection = new ReflectionClass('App\newsheader');  //  inspect the methods and constants of any class!
     
