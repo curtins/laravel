@@ -35,6 +35,8 @@ Route::get('/report', function () {
     
     $header = DB::table('headers')
     ->select('id','title', 'feed')
+    ->orderBy('feed','id')
+
     ->get();
 
     $details = DB::table('details')
