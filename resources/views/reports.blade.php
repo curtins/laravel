@@ -11,11 +11,7 @@
 
                    dd($heads); 
 
-                   @foreach($heads as $head)
-
-                       
-
-                   @endforeach
+                    
 
                    </table>
 
