@@ -9,8 +9,9 @@
 
                     <table width="100%" class="table table-bordered table-striped">
 
-                   dd($heads); 
-
+                    @foreach($header as $headers)
+                    
+                    @endforeach 
                     
 
                    </table>

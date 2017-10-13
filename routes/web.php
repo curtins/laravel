@@ -33,7 +33,7 @@ Route::get('/headers', function () {
 
 Route::get('/report', function () {  
     
-    $heads = DB::table('headers')
+    $header = DB::table('headers')
     ->select('id','title', 'feed')
     ->get();
 
@@ -43,7 +43,7 @@ Route::get('/report', function () {
 
     
 
-    return view('reports')->with(compact('$heads','$details'));
+    return view('reports')->with('header', $header);
 
     //$reflection = new ReflectionClass('App\newsheader');  //  inspect the methods and constants of any class!
     
