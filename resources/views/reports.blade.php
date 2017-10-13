@@ -9,11 +9,7 @@
 
                     <table width="100%" class="table table-bordered table-striped">
 
-                    @foreach($header as $headers)
-
-                    <tr><td><td>{{$headers->feed}}</td></tr> 
-                    
-                    @endforeach 
+                   
                     
 
                    </table>
