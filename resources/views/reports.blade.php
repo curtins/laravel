@@ -14,7 +14,7 @@
 
                             <tr><td><td>{{$details->feed}} </td>
                             
-                            <td><a href="{{$details->itemid}}">{{$details->title}}</a></td>
+                            <td><a href="{{$details->itemid}}"  target="_blank" >{{$details->title}}</a></td>
                             
                             </tr> 
                     
