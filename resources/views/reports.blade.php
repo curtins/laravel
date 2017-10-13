@@ -9,7 +9,12 @@
 
                     <table width="100%" class="table table-bordered table-striped">
 
-                   
+                    
+						 @foreach($detail as $details)
+
+                            <tr><td><td>{{$details->feed}}</td></tr> 
+                    
+                        @endforeach 
                     
 
                    </table>
