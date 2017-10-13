@@ -44,7 +44,7 @@ Route::get('/report', function () {
 
     $detail = DB::table('details')
     ->select('feed','itemid', 'title')
-    ->orderBy('feed','id')
+    ->orderBy('feed')
     ->get();
 
     
