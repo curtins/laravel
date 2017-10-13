@@ -43,7 +43,7 @@ Route::get('/report', function () {
 
     
 
-    return view('reports',compact('$heads','$details'));
+    return view('reports')->with(compact('$heads','$details'));
 
     //$reflection = new ReflectionClass('App\newsheader');  //  inspect the methods and constants of any class!
     
