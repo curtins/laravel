@@ -9,6 +9,8 @@
 
                     <table width="100%" class="table table-bordered table-striped">
 
+                   dd($heads); 
+
                    @foreach($heads as $head)
 
                        
