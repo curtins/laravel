@@ -18,6 +18,7 @@ class CreateDetailsTable extends Migration
             $table->integer('header_id');
             $table->string('itemid');             
             $table->string('title');
+            $table->string('feed');
             $table->text('summary');
             $table->string('content');
             $table->timestamps();
