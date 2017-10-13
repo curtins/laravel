@@ -11,9 +11,7 @@
 
                    @foreach($heads as $head)
 
-                        @if($heads->id == $details->header_id)
-                        <tr><td width="90%">{{$detail->title}} - {{$detail->itemid}}</td></tr>
-                        @endif
+                       
 
                    @endforeach
 
