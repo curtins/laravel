@@ -7,16 +7,21 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Dashboard</div>
 
-                <div class="panel-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+                    <table width="100%" class="table table-bordered table-striped">
 
-                    You are logged in!
+                   @foreach($heads as $head)
+
+                        @if($heads->id == $details->header_id)
+                        <tr><td width="90%">{{$detail->title}} - {{$detail->itemid}}</td></tr>
+                        @endif
+
+                   @endforeach
+
+                   </table>
+
+                 
                 </div>
-            </div>
+
         </div>
     </div>
 </div>

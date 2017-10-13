@@ -33,11 +33,11 @@ Route::get('/headers', function () {
 
 Route::get('/report', function () {  
     
-    $head = DB::table('headers')
+    $heads = DB::table('headers')
     ->select('id','title', 'feed')
     ->get();
 
-    $detail = DB::table('details')
+    $details = DB::table('details')
     ->select('header_id','itemid', 'title', 'summary')
     ->get();
 
