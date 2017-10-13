@@ -11,7 +11,7 @@
 
                     @foreach($header as $headers)
 
-                    <tr><td>{{$headers->title}}</td><td>{{$headers->feed}}</td></tr> 
+                    <tr><td><td>{{$headers->feed}}</td></tr> 
                     
                     @endforeach 
                     
