@@ -15,6 +15,9 @@ class CreateSourcesTable extends Migration
     {
         Schema::create('sources', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('source');
+            $table->string('action');
+            $table->string('url');
             $table->timestamps();
         });
     }
